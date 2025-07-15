@@ -21,7 +21,16 @@
 
 //solution
 
-
+function sum(numbers) {
+    let element = 0;
+    if (numbers.length === 0) {
+        return 0
+    }
+    for (let index = 0; index < numbers.length; index++) {
+        element += numbers[index]
+    }
+    return element
+}
 
 let summ1 = sum([1, 2, 3, 4]);
 console.log(summ1);
