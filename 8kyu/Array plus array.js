@@ -16,8 +16,15 @@ function arrayPlusArray(arr1, arr2) {
         sum2 = sum2 + arr2[index];
     }
     let sum = sum1 + sum2
-    return sum; 
+    return sum;
 }
 
-let sum = arrayPlusArray([222,3], [20]);
-console.log(sum)
+
+function arrayPlusArray2(arr1, arr2) {
+    return  arr1.concat(arr2).reduce((acc, val) =>acc + val)
+    
+}
+
+
+let sum2 = arrayPlusArray2([222, 3], [20]);
+console.log(sum2)
