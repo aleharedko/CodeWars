@@ -13,20 +13,9 @@
 
 //solution
 
-
-let questions = [{
-    question: "What's the currency of the USA?",
-    choices: ["US dollar", "Ruble", "Horses", "Gold"],
-    corAnswer: 0
-}, {
-    question: "Where was the American Declaration of Independence signed?",
-    choices: ["Philadelphia", "At the bottom", "Frankie's Pub", "China"],
-    corAnswer: 0
-}];
-
 function addsquestionsInArray(array) {
     for (let index = 0; index < array.length; index++) {
-        array[index].usersAnswer = null
+        array[index].usersAnswer = null  // добавляет новый ключь каждому объекту в масиые
         
     }
     return array
