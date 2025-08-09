@@ -8,7 +8,8 @@
 //solution
 
 function filter_list(l) {
-    const newArray = l.filter(function (l) {
-        return l >= 0 && l !== String
+    const newArray = l.filter(function (element) {
+        return element === 'number' && element !== "string" && element >= 0
 })
+return newArray
 }
