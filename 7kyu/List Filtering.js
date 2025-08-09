@@ -9,7 +9,7 @@
 
 function filter_list(l) {
     const newArray = l.filter(function (element) {
-        return element === 'number' && element !== "string" && element >= 0
+        return typeof element === 'number'
 })
 return newArray
 }
