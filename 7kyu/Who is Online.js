@@ -42,19 +42,25 @@
 // solution
 
 const whosOnline = (friends) => {
-    const newArray = [];
+    const newObject = {};
     if (friends.length === 0) {
-        return newArray
+        return newObject
     }
 
-    for (let i = 0; i < array.length; i++) {
-        const element = array[i];
-        if (element.status === "online") {
-            newArray = element.status + element.username
-        } else if (element.lastActivity <= 10) {
-            newArray = element.status + element.username
-        } else if (element.status === 'offline') {
-            newArray = element.status + element.username
+
+    for (const friend of friends) {
+        const status
+        if (friend.status === "online" && friend.lastActivity >= 10) {
+            status = 'away'
+        } else if (friend.status === "online") {
+            status = 'online'
+        } else{
+            status = 'offline'
         }
     }
+
+    // Короткая запись: если statusMap[status] не существует, то используется []
+statusMap[status] = statusMap[status] || []; 
+statusMap[status].push(friend.username);    
+    return status
 }
