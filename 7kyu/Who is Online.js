@@ -42,25 +42,41 @@
 // solution
 
 const whosOnline = (friends) => {
-    const newObject = {};
+    // 1. Создаем пустой объект для хранения результатов
+    const statusMap = {};
+
+    // 2. Если массив пуст, возвращаем пустой объект
     if (friends.length === 0) {
-        return newObject
+        return statusMap;
     }
 
-
+    // 3. Перебираем каждого друга в массиве
     for (const friend of friends) {
-        const status
-        if (friend.status === "online" && friend.lastActivity >= 10) {
-            status = 'away'
-        } else if (friend.status === "online") {
-            status = 'online'
-        } else{
-            status = 'offline'
-        }
-    }
+        let status;
 
-    // Короткая запись: если statusMap[status] не существует, то используется []
-statusMap[status] = statusMap[status] || []; 
-statusMap[status].push(friend.username);    
-    return status
-}
+        // 4. Определяем статус:
+        // Если 'online' и последняя активность больше 10 минут, то 'away'
+        if (friend.status === 'online' && friend.lastActivity > 10) {
+            status = 'away';
+        } 
+        // Если просто 'online' (активен), то 'online'
+        else if (friend.status === 'online') {
+            status = 'online';
+        } 
+        // Во всех остальных случаях, 'offline'
+        else {
+            status = 'offline';
+        }
+        
+        // 5. Добавляем имя друга в соответствующий массив в объекте
+        // Если массив для данного статуса еще не существует, создаем его
+        if (!statusMap[status]) {  // не понимаю данны участок кода
+            statusMap[status] = [];
+        }
+        // Добавляем имя пользователя
+        statusMap[status].push(friend.username);
+    }
+    
+    // 6. Возвращаем итоговый объект
+    return statusMap;
+};
