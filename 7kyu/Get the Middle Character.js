@@ -22,3 +22,15 @@ function getMiddle(s) {
         return s.charAt(middleIndex);
     }
 }
+
+// function getMiddle(s) {
+//     const middle = s.length / 2;
+
+//     if (s.length % 2 === 0) {
+//         // Для четной длины:
+//         return s.slice(middle - 1, middle + 1);
+//     } else {
+//         // Для нечетной длины:
+//         return s.slice(Math.floor(middle), Math.floor(middle) + 1);
+//     }
+// }
