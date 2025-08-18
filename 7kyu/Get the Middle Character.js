@@ -11,6 +11,14 @@
 
 //solution
 function getMiddle(s) {
-  //Code goes here!
-    return '';
+  const length = s.length;
+  const middleIndex = Math.floor(length / 2);
+
+  if (length % 2 === 0) {
+    // Если длина строки четная, возвращаем 2 символа
+    return s.substring(middleIndex - 1, middleIndex + 1);
+  } else {
+    // Если длина строки нечетная, возвращаем 1 символ
+    return s.charAt(middleIndex);
+  }
 }
