@@ -34,3 +34,9 @@ function getMiddle(s) {
 //         return s.slice(Math.floor(middle), Math.floor(middle) + 1);
 //     }
 // }
+
+
+// function getMiddle(s) {
+//     const middle = s.length / 2;
+//     return s.length % 2 === 0 ? s.slice(middle - 1, middle + 1) : s.charAt(Math.floor(middle));
+// }
