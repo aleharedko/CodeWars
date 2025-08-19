@@ -12,8 +12,8 @@
 //solution
 
 function wrap(value) {
-    const newObj = { }
-    return newObj[value."value"]
+    const newObj = {value: "value"}
+    return newObj
 }
 
 //создать новый объект
