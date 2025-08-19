@@ -12,11 +12,6 @@
 //solution
 
 function wrap(value) {
-    const newObj = value['value']
-    return newObj
-  {
-    value:value 
-  };
+    const newObj = { }
+    return newObj{ value: value}
 }
-
-//не решил до конца
