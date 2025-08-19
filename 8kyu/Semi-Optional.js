@@ -13,5 +13,5 @@
 
 function wrap(value) {
     const newObj = { }
-    return newObj[value: value]
+    return newObj[value."value"]
 }
