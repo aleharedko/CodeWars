@@ -18,3 +18,5 @@ function wrap(value) {
     value:value 
   };
 }
+
+//не решил до конца
