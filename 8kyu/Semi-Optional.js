@@ -13,7 +13,7 @@
 
 function wrap(value) {
     const newObj = {value: "value"}
-    return newObj[value]
+    return newObj
 }
 
 //создать новый объект
