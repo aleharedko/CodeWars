@@ -12,5 +12,5 @@ function stringToArray(string){
     return string.split(" ")
 }
 
-let sdds= stringToArray("I love arrays they are my favorite");
+let sdds = stringToArray("I love arrays they are my favorite");
 console.log(sdds);
