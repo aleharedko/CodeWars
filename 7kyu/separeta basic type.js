@@ -17,20 +17,22 @@
 //solution
 
 function separateTypes(input) {
-    let obj = {
+    let result = {
         string: [],
         boolean: [],
-        number: []
-    }
-    input.forEach(item => {
-        if (typeof item === 'string') {
-            obj.string.push(item);
-        } else if (typeof item === 'boolean') {
-            obj.boolean.push(item);
-        } else if (typeof item === 'number') {
-            obj.number.push(item);
+        number: [],
+    };
+
+    input.forEach((item) => {
+        const type = typeof item;
+        if (type === 'string') {
+            result.string.push(item);
+        } else if (type === 'boolean') {
+            result.boolean.push(item);
+        } else if (type === 'number') {
+            result.number.push(item);
         }
     });
 
-    return obj;
-}  
+    return result;
+}
