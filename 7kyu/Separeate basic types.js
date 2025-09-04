@@ -47,11 +47,11 @@ function separateTypes(input) {
     const result = {};
 
     // Перебираем каждый элемент входного массива.
-    for (const item of input) {
-        const type = typeof item;
+    for (const item of input) {   //беру первый элемент в input и называю его item
+        const type = typeof item;  // сщздаю переменную в которую сохраня. тип данных моих item
 
         // Если ключа для данного типа ещё нет, создаём его с пустым массивом.
-        if (!result[type]) {
+        if (!result[type]) {  // осуществляю проверну на наличие ключа в объекте, если его нет, то следующей строкой создаю
             result[type] = [];
         }
 
