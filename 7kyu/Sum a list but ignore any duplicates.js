@@ -5,13 +5,21 @@
 
 
 //solution
-function sumNoDuplicates(numList) {
-    const newSet = [...new Set(numList)]; //создаю уникальный бъектальный
-    let newArray = Array.from(newSet); // переделываю объект в массив
+// function sumNoDuplicates(numList) {    РКШЕНИЕ ПРАВИЛЬНОЕ И ХОРОШЕЕ НО НЕ ПОД ДАННУЮ ЗАДАЧУ, ПОДСЧИТЫВАЕТ СУММУ ТОЛЬКО УНИКАЛЬНЫХ ЧИСЕЛ
+//     const newSet = [...new Set(numList)]; //создаю уникальный бъектальный
+//     let newArray = Array.from(newSet); // переделываю объект в массив
+//
+//     return newArray.reduce((total, num) => {
+//         return total + num;
+//     }, 0);
+// }
+//
+// const array = [5, 6, 10, 3, 10, 10, 6, 7, 0, 9, 1, 1, 6, 3, 1]
+// let newArray = sumNoDuplicates(array)
+// console.log(newArray)
 
-    return newArray.reduce((total, num) => {
-        return total + num;
-    }, 0);
+function sumNoDuplicates(numList) {
+
 }
 
 const array = [5, 6, 10, 3, 10, 10, 6, 7, 0, 9, 1, 1, 6, 3, 1]
