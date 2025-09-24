@@ -6,14 +6,14 @@
 
 //solution
 function sumNoDuplicates(numList) {
-    let newArray = []
-    const solution = numList.filter(i =>{
-        if(i.length !== i){
-           i.push(newArray)
-            newArray = newArray.reduce((total, number) => {
-                return total + number;
-            }, 0);
-        }
-    })
-    return solution;
+    const newSet = [...new Set(numList)]; //создаю уникальный бъектальный
+    let newArray = Array.from(newSet); // переделываю объект в массив
+
+    return newArray.reduce((total, num) => {
+        return total + num;
+    }, 0);
 }
+
+const array = [5, 6, 10, 3, 10, 10, 6, 7, 0, 9, 1, 1, 6, 3, 1]
+let newArray = sumNoDuplicates(array)
+console.log(newArray)
