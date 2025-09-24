@@ -17,3 +17,5 @@ function sumNoDuplicates(numList) {
 const array = [5, 6, 10, 3, 10, 10, 6, 7, 0, 9, 1, 1, 6, 3, 1]
 let newArray = sumNoDuplicates(array)
 console.log(newArray)
+
+
