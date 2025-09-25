@@ -19,6 +19,8 @@
 // console.log(newArray)
 
 function sumNoDuplicates(numList) {
+1
+
 
 }
 
