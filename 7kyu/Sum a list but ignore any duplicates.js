@@ -21,7 +21,7 @@
 function sumNoDuplicates(numList) {
 1
     12
-
+        123
 
 }
 
