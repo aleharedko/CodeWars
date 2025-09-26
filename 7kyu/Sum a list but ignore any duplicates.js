@@ -19,10 +19,32 @@
 // console.log(newArray)
 
 function sumNoDuplicates(numList) {
-1
-    12
-        123
+    if(!numList || numList === 0){
+       return 0
+    }
 
+    const counts = {}
+
+    for (const num of numList){
+      const key = String(num)
+
+      if (counts[key]){
+          counts[key]++
+      }else{
+          counts[key] = 1
+      }
+    }
+
+    const finelNumber = Object.keys(counts).reduce((acc, item) =>{
+
+        if (item === 1){
+            return acc + item
+        }else{
+            return acc
+        }
+    }, 0)
+
+    return  finelNumber
 }
 
 const array = [5, 6, 10, 3, 10, 10, 6, 7, 0, 9, 1, 1, 6, 3, 1]
