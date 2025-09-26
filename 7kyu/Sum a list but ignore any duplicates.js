@@ -35,16 +35,18 @@ function sumNoDuplicates(numList) {
       }
     }
 
-    const finelNumber = Object.keys(counts).reduce((acc, item) =>{
+    const keysArray = Object.keys(counts)
 
-        if (item === 1){
-            return acc + item
-        }else{
-            return acc
+    const finalSum = keysArray.reduce((total, num) => {
+        const frequency = counts[num];
+
+        if (frequency === 1) {
+            return total + Number(num);
         }
-    }, 0)
+        return total;
+    }, 0);
 
-    return  finelNumber
+    return  finalSum
 }
 
 const array = [5, 6, 10, 3, 10, 10, 6, 7, 0, 9, 1, 1, 6, 3, 1]
