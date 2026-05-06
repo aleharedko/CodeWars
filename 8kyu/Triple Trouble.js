@@ -8,12 +8,14 @@
 
 //solution
 
+// function tripleTrouble(one, two, three) {
+//     let newString = "";
+//     for (let i = 0; i < one.length; i++) {
+//         newString += one[i] + two[i] + three[i]
+//     }
+//     return newString
+// }
+
 function tripleTrouble(one, two, three) {
-    let newString = "";
-
-    for (let i = 0; i < one.length; i++) {
-        newString += one[i] + two[i] + three[i]
-    }
-
-    return newString
+    return one.split('').map((fersSimbal, i) => fersSimbal +two[i] + three[i]).join('') 
 }
