@@ -24,6 +24,15 @@
 // }
 
 
+// function betterThanAverage(classPoints, yourPoints) {
+//     let sum = classPoints.reduce(function (currentSum, currentNum) {
+//         return currentSum + currentNum}  ,0)
+    
+//     const average = sum / classPoints.length
+    
+//     return yourPoints > average
+// }
+
 function betterThanAverage(classPoints, yourPoints) {
     let sum = classPoints.reduce(function (currentSum, currentNum) {
         return currentSum + currentNum}  ,0)
